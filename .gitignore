@@ -10,3 +10,4 @@ app/build/
 .gradle-home/
 .tools/
 quickport.txt
+parkping-release.keystore
