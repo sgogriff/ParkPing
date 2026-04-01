@@ -1,9 +1,32 @@
+import org.gradle.api.GradleException
+import java.util.Properties
+
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.plugin.compose")
     id("com.google.devtools.ksp")
     id("com.google.dagger.hilt.android")
 }
+
+val signingProperties = Properties()
+val signingPropertiesFile = rootProject.file("signing.properties")
+val releaseTasksRequested = gradle.startParameter.taskNames.any { taskName ->
+    taskName.contains("Release", ignoreCase = true)
+}
+
+if (signingPropertiesFile.exists()) {
+    signingPropertiesFile.inputStream().use { input ->
+        signingProperties.load(input)
+    }
+} else if (releaseTasksRequested) {
+    throw GradleException(
+        "Missing signing.properties. Create it in the project root before running a release build.",
+    )
+}
+
+fun signingProperty(name: String): String =
+    signingProperties.getProperty(name)
+        ?: throw GradleException("Missing `$name` in signing.properties.")
 
 android {
     namespace = "com.gowain.parkping"
@@ -22,9 +45,21 @@ android {
         }
     }
 
+    signingConfigs {
+        create("release") {
+            if (signingPropertiesFile.exists()) {
+                storeFile = rootProject.file(signingProperty("STORE_FILE"))
+                storePassword = signingProperty("STORE_PASSWORD")
+                keyAlias = signingProperty("KEY_ALIAS")
+                keyPassword = signingProperty("KEY_PASSWORD")
+            }
+        }
+    }
+
     buildTypes {
         release {
             isMinifyEnabled = false
+            signingConfig = signingConfigs.getByName("release")
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro",

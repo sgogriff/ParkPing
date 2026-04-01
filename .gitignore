@@ -11,3 +11,7 @@ app/build/
 .tools/
 quickport.txt
 parkping-release.keystore
+signing.properties
+*.keystore
+*.jks
+
