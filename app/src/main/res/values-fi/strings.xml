@@ -1,0 +1,176 @@
+<resources>
+    <string name="app_name">ParkPing</string>
+    <string name="business_day_label">Työpäivä %1$s</string>
+    <string name="tab_home">Koti</string>
+    <string name="tab_today">Tiedot</string>
+    <string name="tab_setup">Asetukset</string>
+
+    <string name="onboarding_title">Yksityinen käyttöönotto</string>
+    <string name="onboarding_intro_title">Mitä ParkPing tekee</string>
+    <string name="onboarding_intro_subtitle">ParkPing seuraa työpaikalle saapumista ja näyttää muistutusilmoituksen, jotta pysäköinnin rekisteröinti ei unohdu.</string>
+    <string name="onboarding_intro_body">Kun ParkPing arvioi sinun saapuneen perille, se näyttää jatkuvan muistutuksen. Kun vahvistat pysäköinnin rekisteröidyksi, voit merkitä sen tehdyksi ja muistutus pysyy poissa loppupäivän ajan.</string>
+    <string name="onboarding_privacy_title">Yksityinen oletuksena</string>
+    <string name="onboarding_privacy_subtitle">ParkPing tallentaa paikat, Wi-Fi-nimet ja muistutustilan paikallisesti tähän laitteeseen.</string>
+    <string name="onboarding_local_title">Mikä pysyy paikallisena</string>
+    <string name="onboarding_local_body">Koordinaatit, paikkojen nimet, SSID:t, muistutuksen tila ja kielivalinta pysyvät puhelimessasi. ParkPing ei käytä tiliä tai pilvipalvelua.</string>
+    <string name="onboarding_map_title">Karttaesikatselu</string>
+    <string name="onboarding_map_body">Asetusnäkymä lataa OpenStreetMap-karttatiiliä vain näyttääkseen ei-interaktiivisen karttaesikatselun. Varsinaiset pysäköintitiedot pysyvät paikallisina.</string>
+    <string name="onboarding_delete_title">Poista milloin tahansa</string>
+    <string name="onboarding_delete_body">Voit poistaa ParkPingin milloin tahansa: Asetukset > Sovellukset > ParkPing > Poista.</string>
+    <string name="onboarding_permissions_title">Myönnä hyödylliset oikeudet</string>
+    <string name="onboarding_permissions_subtitle">Ilmoitukset pitävät muistutuksen näkyvissä. Sijaintioikeudet antavat Androidille mahdollisuuden käyttää geofenceja luotettavasti.</string>
+    <string name="onboarding_first_place_title">Lisää ensimmäinen paikka</string>
+    <string name="onboarding_first_place_subtitle">Tämä on valinnainen. Voit tallentaa paikan nyt tai ohittaa sen ja viimeistellä myöhemmin Asetuksissa.</string>
+    <string name="trigger_terms_title">Miten saapuminen tunnistetaan</string>
+    <string name="trigger_geofence_title">Geofence</string>
+    <string name="trigger_geofence_body">Geofence on virtuaalinen rajaus paikan ympärillä. ParkPing pyytää Androidia valvomaan tätä rajaa ja laukaisemaan muistutuksen, kun saavut alueelle.</string>
+    <string name="trigger_ssid_title">SSID</string>
+    <string name="trigger_ssid_body">SSID on Wi‑Fi-verkon nimi. Jos puhelimesi yhdistyy tallennettuun työpaikan SSID:hen, ParkPing voi käyttää sitä toisena saapumissignaalina ja näyttää muistutuksen.</string>
+
+    <string name="home_armed_title">Valmiina</string>
+    <string name="home_armed_subtitle">Valvonta on päällä ja odottaa seuraavaa saapumistasi.</string>
+    <string name="home_unarmed_title">Pois valmiudesta</string>
+    <string name="home_unarmed_setup">Paikka on olemassa, mutta ParkPing tarvitsee vielä toimivan laukaisun tai oikeuden ennen kuin se voi aktivoitua.</string>
+    <string name="home_unarmed_active">Muistutus on jo aktiivinen juuri nyt.</string>
+    <string name="home_unarmed_snoozed">Muistutus on tällä hetkellä torkulla.</string>
+    <string name="home_unarmed_completed">Pysäköinti on jo merkitty tehdyksi tältä päivältä.</string>
+    <string name="home_unarmed_idle">Valvonta on pois päältä, joten ParkPing nukkuu toistaiseksi.</string>
+    <string name="home_actions_title">Pikatoiminnot</string>
+
+    <string name="today_status_active">Muistutus on aktiivinen</string>
+    <string name="today_status_snoozed">Muistutus on torkulla</string>
+    <string name="today_status_completed">Pysäköinti vahvistettu tältä päivältä</string>
+    <string name="today_status_idle">Odotetaan saapumista</string>
+    <string name="today_last_place_subtitle">Viimeksi laukaissut paikka: %1$s</string>
+    <string name="today_setup_needed_title">Asetukset vaativat vielä huomiota</string>
+    <string name="today_setup_needed_body">Lisää Asetuksissa vähintään yksi geofence- tai Wi-Fi-paikka, jotta ParkPingillä on jotain valvottavaa.</string>
+    <string name="today_background_needed_body">Taustasijainti puuttuu vielä, joten geofence-muistutuksia ei voida ottaa käyttöön.</string>
+    <string name="today_location_needed_body">Etualan sijainti puuttuu vielä, joten ParkPing ei voi tunnistaa Wi-Fi-verkkoja.</string>
+    <string name="today_monitoring_title">Valvonta</string>
+    <string name="today_details_title">Tiedot</string>
+    <string name="today_detail_status">Tila</string>
+    <string name="today_detail_source">Viimeisin laukaisulähde</string>
+    <string name="today_detail_place">Viimeisin laukaisupaikka</string>
+    <string name="today_detail_last_trigger">Viimeisin laukaisuaika</string>
+    <string name="today_detail_completed">Vahvistettu</string>
+    <string name="today_detail_snoozed_until">Torkkuun asti</string>
+
+    <string name="setup_language_title">Kieli</string>
+    <string name="setup_language_body">Vaihda sovelluksen kieleksi englanti tai suomi. Tämä asetus vaikuttaa vain ParkPingiin.</string>
+    <string name="setup_permissions_title">Oikeudet</string>
+    <string name="setup_reminders_title">Muistutusasetukset</string>
+    <string name="setup_places_title">Paikat</string>
+    <string name="setup_monitoring_title">Rekisteröinnin tila</string>
+    <string name="setup_places_empty_title">Paikkoja ei vielä ole</string>
+    <string name="setup_places_empty_body">Lisää paikkoja niille alueille ja Wi-Fi-verkoille, joiden pitäisi laukaista pysäköintimuistutus.</string>
+
+    <string name="monitoring_geofence">Geofence-valvonta</string>
+    <string name="monitoring_wifi">Wi-Fi-valvonta</string>
+    <string name="monitoring_last_error">Viimeisin rekisteröintihuomio</string>
+
+    <string name="permission_notifications_title">Ilmoitukset</string>
+    <string name="permission_notifications_body">Antaa ParkPingin näyttää jatkuvan muistutuksen.</string>
+    <string name="permission_location_title">Etualan sijainti</string>
+    <string name="permission_location_body">Tarvitaan nykyisen sijainnin lukemiseen ja Wi-Fi-verkon tunnistamiseen.</string>
+    <string name="permission_background_title">Taustasijainti</string>
+    <string name="permission_background_body">Tarvitaan, jotta geofence-muistutukset toimivat luotettavasti myös silloin kun sovellus ei ole auki.</string>
+
+    <string name="place_editor_title">Valittu paikka</string>
+    <string name="place_name_placeholder">Nimetön paikka</string>
+    <string name="place_behavior_title">Uudelleenlaukaisun toiminta</string>
+    <string name="place_ssids_title">Wi-Fi-verkot</string>
+    <string name="place_ssids_empty">Lisää yksi tai useampi SSID, jos tämän paikan pitää laukaista muistutus myös Wi-Fin kautta.</string>
+    <string name="place_ssid_entry_title">Wi-Fi-rivi</string>
+    <string name="place_signal_geofence">Geofence</string>
+    <string name="place_signal_wifi_count">%1$d Wi-Fi</string>
+    <string name="place_signal_none">Laukaisua ei ole vielä määritetty</string>
+    <string name="place_disabled_summary">%1$s • pois käytöstä</string>
+
+    <string name="field_reminder_text">Muistutusteksti</string>
+    <string name="field_reminder_support">Näytetään jatkuvassa ilmoituksessa, kun paikka laukeaa.</string>
+    <string name="field_snooze_minutes">Torkun pituus (minuuttia)</string>
+    <string name="field_place_name">Paikan nimi</string>
+    <string name="field_place_enabled">Paikka käytössä</string>
+    <string name="field_latitude">Leveysaste</string>
+    <string name="field_longitude">Pituusaste</string>
+    <string name="field_radius">Säde (metriä)</string>
+    <string name="field_trigger_on_switch">Laukaise paikkaa vaihdettaessa</string>
+    <string name="field_trigger_on_switch_body">Jos siirryt toisesta valvotusta paikasta tähän, salli uusi muistutus heti.</string>
+    <string name="field_return_after_away">Laukaise poissaolon jälkeen</string>
+    <string name="field_return_after_away_body">Jos poistut kaikista valvotuista paikoista ja palaat myöhemmin tähän, vaadi vähimmäispoissaoloaika ennen uutta laukaisua.</string>
+    <string name="field_return_after_minutes">Poissaoloaika ennen uudelleenlaukaisua (minuuttia)</string>
+    <string name="field_ssid_name">Wi-Fi-nimi</string>
+    <string name="field_ssid_value">SSID</string>
+
+    <string name="map_preview_waiting_title">Karttaesikatselu näkyy tässä</string>
+    <string name="map_preview_waiting_body">Anna leveys- ja pituusaste nähdäksesi paikan rajauksen.</string>
+    <string name="map_preview_offline_title">Karttaesikatselu ei ole käytettävissä offline-tilassa</string>
+    <string name="map_preview_coordinates_body">Koordinaatit: %1$.6f, %2$.6f</string>
+
+    <string name="language_english">English</string>
+    <string name="language_finnish">Suomi</string>
+
+    <string name="action_continue">Jatka</string>
+    <string name="action_back">Takaisin</string>
+    <string name="action_finish_setup">Viimeistele asennus</string>
+    <string name="action_skip_for_now">Ohita toistaiseksi</string>
+    <string name="action_mark_done">Merkitse tehdyksi</string>
+    <string name="action_snooze">Torkku</string>
+    <string name="action_rearm">Uudelleenaktivoi</string>
+    <string name="action_open_setup">Avaa asetukset</string>
+    <string name="action_sync_monitoring">Synkronoi valvonta</string>
+    <string name="action_request">Pyydä</string>
+    <string name="action_open_settings">Avaa asetukset</string>
+    <string name="action_save_changes">Tallenna muutokset</string>
+    <string name="action_add_place">Lisää paikka</string>
+    <string name="action_delete_place">Poista paikka</string>
+    <string name="action_use_current">Käytä nykyistä</string>
+    <string name="action_add_ssid">Lisää SSID</string>
+    <string name="action_delete_ssid">Poista SSID</string>
+    <string name="action_test_reminder">Testaa muistutus</string>
+    <string name="notification_action_open">Avaa sovellus</string>
+    <string name="notification_action_done">Merkitse tehdyksi</string>
+    <string name="notification_action_snooze">Torkku</string>
+    <string name="notification_channel_name">Pysäköintimuistutukset</string>
+    <string name="notification_channel_description">Jatkuvat muistutukset pysäköinnin rekisteröimiseksi työpaikalle saapuessa.</string>
+
+    <string name="summary_places">%1$d paikkaa</string>
+    <string name="summary_monitoring_ready">Valvonta valmis</string>
+    <string name="summary_monitoring_needs_setup">Asetuksia puuttuu</string>
+    <string name="summary_done">Valmis tälle päivälle</string>
+    <string name="summary_armed">Valmiina</string>
+    <string name="summary_snoozed">Torkulla</string>
+    <string name="summary_waiting">Odottaa</string>
+
+    <string name="status_on">Päällä</string>
+    <string name="status_off">Pois</string>
+    <string name="status_granted">Myönnetty</string>
+    <string name="status_missing">Puuttuu</string>
+    <string name="status_monitoring_refreshed">Valvonnan tila päivitettiin.</string>
+    <string name="status_settings_saved">Asetukset tallennettu.</string>
+    <string name="status_onboarding_complete">Asetukset tallennettu. ParkPing on valmis.</string>
+    <string name="status_marked_done">Pysäköinti merkitty tehdyksi päivälle %1$s.</string>
+    <string name="status_reminder_snoozed">Muistutus asetettiin torkulle.</string>
+    <string name="status_rearmed">Muistutus nollattu ja valvonta aktivoitu uudelleen.</string>
+    <string name="status_current_location_copied">Nykyinen sijainti kopioitiin valittuun paikkaan.</string>
+    <string name="status_test_reminder_shown">Testimuistutus näytettiin.</string>
+
+    <string name="error_select_place">Valitse ensin paikka.</string>
+    <string name="error_location_permission_required">Myönnä etualan sijaintioikeus ennen nykyisen sijainnin käyttöä.</string>
+    <string name="error_current_location_unavailable">Nykyistä sijaintia ei voitu lukea.</string>
+    <string name="error_test_reminder_unavailable">Lisää vähintään yksi käytössä oleva geofence tai SSID ennen testimuistutusta.</string>
+    <string name="error_invalid_snooze">Torkun pituuden on oltava positiivinen minuuttimäärä.</string>
+    <string name="error_invalid_coordinates">Anna kelvolliset leveys- ja pituusastearvot.</string>
+    <string name="error_invalid_radius">Anna kelvollinen geofence-säde.</string>
+    <string name="error_invalid_return_time">Anna positiivinen poissaoloaika minuutteina.</string>
+    <string name="error_invalid_ssid">Jokaisella Wi-Fi-rivillä täytyy olla SSID.</string>
+    <string name="error_duplicate_ssids">Jokaisen SSID:n täytyy olla yksilöllinen kaikissa paikoissa.</string>
+    <string name="error_place_name_required">Jokaisella tallennettavalla paikalla täytyy olla nimi.</string>
+
+    <string name="trigger_geofence">Geofence</string>
+    <string name="trigger_wifi">Wi-Fi</string>
+    <string name="value_none">Ei mitään</string>
+
+    <string name="default_place_name">Työ</string>
+    <string name="default_ssid_name">Wi-Fi</string>
+</resources>

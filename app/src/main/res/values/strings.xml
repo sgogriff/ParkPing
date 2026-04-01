@@ -1,0 +1,176 @@
+<resources>
+    <string name="app_name">ParkPing</string>
+    <string name="business_day_label">Business day %1$s</string>
+    <string name="tab_home">Home</string>
+    <string name="tab_today">Details</string>
+    <string name="tab_setup">Setup</string>
+
+    <string name="onboarding_title">Private setup</string>
+    <string name="onboarding_intro_title">What ParkPing does</string>
+    <string name="onboarding_intro_subtitle">ParkPing watches for your arrival at work and puts up a reminder notification so you do not forget to register parking.</string>
+    <string name="onboarding_intro_body">When ParkPing thinks you have arrived, it shows a persistent reminder. Once you confirm that parking has been registered, you can mark it done and the reminder will stop for the rest of that workday.</string>
+    <string name="onboarding_privacy_title">Private by default</string>
+    <string name="onboarding_privacy_subtitle">ParkPing stores your places, Wi-Fi names, and reminder state locally on this device.</string>
+    <string name="onboarding_local_title">What stays local</string>
+    <string name="onboarding_local_body">Coordinates, place names, SSIDs, reminder state, and language preference stay on your phone. ParkPing does not use an account or cloud backend.</string>
+    <string name="onboarding_map_title">Map preview</string>
+    <string name="onboarding_map_body">The setup screen loads OpenStreetMap tiles only to show the non-interactive preview map. Core parking data still stays local.</string>
+    <string name="onboarding_delete_title">Delete anytime</string>
+    <string name="onboarding_delete_body">You can remove ParkPing at any time: Settings > Apps > ParkPing > Uninstall.</string>
+    <string name="onboarding_permissions_title">Grant the useful permissions</string>
+    <string name="onboarding_permissions_subtitle">Notifications keep the reminder visible. Foreground and background location let Android arm geofences reliably.</string>
+    <string name="onboarding_first_place_title">Add a first place</string>
+    <string name="onboarding_first_place_subtitle">This part is optional. You can save a place now or skip and finish the rest later in Setup.</string>
+    <string name="trigger_terms_title">How arrival detection works</string>
+    <string name="trigger_geofence_title">Geofence</string>
+    <string name="trigger_geofence_body">A geofence is a virtual boundary around a place. ParkPing asks Android to watch that boundary and trigger a reminder when you enter it.</string>
+    <string name="trigger_ssid_title">SSID</string>
+    <string name="trigger_ssid_body">An SSID is the name of a Wi-Fi network. If your phone connects to a saved work SSID, ParkPing can use that as another arrival signal and trigger a reminder.</string>
+
+    <string name="home_armed_title">Armed</string>
+    <string name="home_armed_subtitle">Monitoring is on and waiting for your next arrival.</string>
+    <string name="home_unarmed_title">Unarmed</string>
+    <string name="home_unarmed_setup">A place exists, but ParkPing still needs a working trigger or permission before it can arm.</string>
+    <string name="home_unarmed_active">A reminder is already active right now.</string>
+    <string name="home_unarmed_snoozed">The reminder is currently snoozed.</string>
+    <string name="home_unarmed_completed">Parking is already marked done for today.</string>
+    <string name="home_unarmed_idle">Monitoring is off, so ParkPing is sleeping for now.</string>
+    <string name="home_actions_title">Quick actions</string>
+
+    <string name="today_status_active">Reminder is active</string>
+    <string name="today_status_snoozed">Reminder is snoozed</string>
+    <string name="today_status_completed">Parking confirmed for today</string>
+    <string name="today_status_idle">Waiting for arrival</string>
+    <string name="today_last_place_subtitle">Last triggered place: %1$s</string>
+    <string name="today_setup_needed_title">Setup still needs attention</string>
+    <string name="today_setup_needed_body">Add at least one geofence or Wi-Fi place in Setup so ParkPing has something to monitor.</string>
+    <string name="today_background_needed_body">Background location is still missing, so geofence reminders cannot arm yet.</string>
+    <string name="today_location_needed_body">Foreground location is still missing, so ParkPing cannot match Wi-Fi identities yet.</string>
+    <string name="today_monitoring_title">Monitoring</string>
+    <string name="today_details_title">Details</string>
+    <string name="today_detail_status">Status</string>
+    <string name="today_detail_source">Last trigger source</string>
+    <string name="today_detail_place">Last trigger place</string>
+    <string name="today_detail_last_trigger">Last trigger time</string>
+    <string name="today_detail_completed">Completed at</string>
+    <string name="today_detail_snoozed_until">Snoozed until</string>
+
+    <string name="setup_language_title">Language</string>
+    <string name="setup_language_body">Switch the app between English and Finnish. This setting only affects ParkPing.</string>
+    <string name="setup_permissions_title">Permissions</string>
+    <string name="setup_reminders_title">Reminder settings</string>
+    <string name="setup_places_title">Places</string>
+    <string name="setup_monitoring_title">Registration status</string>
+    <string name="setup_places_empty_title">No places yet</string>
+    <string name="setup_places_empty_body">Add places for the areas and Wi-Fi networks that should trigger a parking reminder.</string>
+
+    <string name="monitoring_geofence">Geofence monitoring</string>
+    <string name="monitoring_wifi">Wi-Fi monitoring</string>
+    <string name="monitoring_last_error">Last registration note</string>
+
+    <string name="permission_notifications_title">Notifications</string>
+    <string name="permission_notifications_body">Lets ParkPing show the ongoing reminder.</string>
+    <string name="permission_location_title">Foreground location</string>
+    <string name="permission_location_body">Needed for current location and Wi-Fi identity matching.</string>
+    <string name="permission_background_title">Background location</string>
+    <string name="permission_background_body">Needed for reliable geofence reminders when the app is not open.</string>
+
+    <string name="place_editor_title">Selected place</string>
+    <string name="place_name_placeholder">Unnamed place</string>
+    <string name="place_behavior_title">Retrigger behavior</string>
+    <string name="place_ssids_title">Wi-Fi networks</string>
+    <string name="place_ssids_empty">Add one or more SSIDs if this place should also trigger from Wi-Fi.</string>
+    <string name="place_ssid_entry_title">Wi-Fi entry</string>
+    <string name="place_signal_geofence">Geofence</string>
+    <string name="place_signal_wifi_count">%1$d Wi-Fi</string>
+    <string name="place_signal_none">No trigger configured yet</string>
+    <string name="place_disabled_summary">%1$s • disabled</string>
+
+    <string name="field_reminder_text">Reminder text</string>
+    <string name="field_reminder_support">Shown in the ongoing notification when a place triggers.</string>
+    <string name="field_snooze_minutes">Snooze duration (minutes)</string>
+    <string name="field_place_name">Place name</string>
+    <string name="field_place_enabled">Place enabled</string>
+    <string name="field_latitude">Latitude</string>
+    <string name="field_longitude">Longitude</string>
+    <string name="field_radius">Radius (meters)</string>
+    <string name="field_trigger_on_switch">Trigger when switching places</string>
+    <string name="field_trigger_on_switch_body">If you move from another monitored place into this one, allow a new reminder immediately.</string>
+    <string name="field_return_after_away">Trigger after being away</string>
+    <string name="field_return_after_away_body">If you leave all monitored places and later return here, require a minimum away time before retriggering.</string>
+    <string name="field_return_after_minutes">Away time before retrigger (minutes)</string>
+    <string name="field_ssid_name">Wi-Fi label</string>
+    <string name="field_ssid_value">SSID</string>
+
+    <string name="map_preview_waiting_title">Map preview will appear here</string>
+    <string name="map_preview_waiting_body">Enter latitude and longitude to preview the place boundary.</string>
+    <string name="map_preview_offline_title">Map preview unavailable offline</string>
+    <string name="map_preview_coordinates_body">Coordinates: %1$.6f, %2$.6f</string>
+
+    <string name="language_english">English</string>
+    <string name="language_finnish">Suomi</string>
+
+    <string name="action_continue">Continue</string>
+    <string name="action_back">Back</string>
+    <string name="action_finish_setup">Finish setup</string>
+    <string name="action_skip_for_now">Skip for now</string>
+    <string name="action_mark_done">Mark done</string>
+    <string name="action_snooze">Snooze</string>
+    <string name="action_rearm">Rearm</string>
+    <string name="action_open_setup">Open Setup</string>
+    <string name="action_sync_monitoring">Sync monitoring</string>
+    <string name="action_request">Request</string>
+    <string name="action_open_settings">Open settings</string>
+    <string name="action_save_changes">Save changes</string>
+    <string name="action_add_place">Add place</string>
+    <string name="action_delete_place">Delete place</string>
+    <string name="action_use_current">Use current</string>
+    <string name="action_add_ssid">Add SSID</string>
+    <string name="action_delete_ssid">Delete SSID</string>
+    <string name="action_test_reminder">Test reminder</string>
+    <string name="notification_action_open">Open app</string>
+    <string name="notification_action_done">Mark done</string>
+    <string name="notification_action_snooze">Snooze</string>
+    <string name="notification_channel_name">Parking reminders</string>
+    <string name="notification_channel_description">Persistent reminders to register parking when arriving at work.</string>
+
+    <string name="summary_places">%1$d places</string>
+    <string name="summary_monitoring_ready">Monitoring ready</string>
+    <string name="summary_monitoring_needs_setup">Needs setup</string>
+    <string name="summary_done">Done today</string>
+    <string name="summary_armed">Armed</string>
+    <string name="summary_snoozed">Snoozed</string>
+    <string name="summary_waiting">Waiting</string>
+
+    <string name="status_on">On</string>
+    <string name="status_off">Off</string>
+    <string name="status_granted">Granted</string>
+    <string name="status_missing">Missing</string>
+    <string name="status_monitoring_refreshed">Monitoring state refreshed.</string>
+    <string name="status_settings_saved">Settings saved.</string>
+    <string name="status_onboarding_complete">Setup saved. ParkPing is ready.</string>
+    <string name="status_marked_done">Parking marked done for %1$s.</string>
+    <string name="status_reminder_snoozed">Reminder snoozed.</string>
+    <string name="status_rearmed">Reminder reset and monitoring rearmed.</string>
+    <string name="status_current_location_copied">Current location copied into the selected place.</string>
+    <string name="status_test_reminder_shown">Test reminder shown.</string>
+
+    <string name="error_select_place">Select a place first.</string>
+    <string name="error_location_permission_required">Grant foreground location before using the current location.</string>
+    <string name="error_current_location_unavailable">Could not read the current location.</string>
+    <string name="error_test_reminder_unavailable">Add at least one enabled geofence or SSID before testing a reminder.</string>
+    <string name="error_invalid_snooze">Snooze duration must be a positive number of minutes.</string>
+    <string name="error_invalid_coordinates">Enter valid latitude and longitude values.</string>
+    <string name="error_invalid_radius">Enter a valid geofence radius.</string>
+    <string name="error_invalid_return_time">Enter a positive away time in minutes.</string>
+    <string name="error_invalid_ssid">Each Wi-Fi row needs a non-empty SSID.</string>
+    <string name="error_duplicate_ssids">Each SSID must be unique across all places.</string>
+    <string name="error_place_name_required">Every saved place needs a name.</string>
+
+    <string name="trigger_geofence">Geofence</string>
+    <string name="trigger_wifi">Wi-Fi</string>
+    <string name="value_none">None</string>
+
+    <string name="default_place_name">Work</string>
+    <string name="default_ssid_name">Wi-Fi</string>
+</resources>

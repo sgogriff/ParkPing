@@ -1,0 +1,12 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/launcher_bg" />
+    <item
+        android:bottom="12dp"
+        android:left="12dp"
+        android:right="12dp"
+        android:top="12dp">
+        <bitmap
+            android:gravity="center"
+            android:src="@drawable/icon_parkping" />
+    </item>
+</layer-list>

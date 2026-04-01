@@ -1,0 +1,9 @@
+<resources>
+    <color name="brand_sunrise">#E97352</color>
+    <color name="brand_coast">#205375</color>
+    <color name="brand_mint">#A5E1AD</color>
+    <color name="surface_warm">#FFF7F0</color>
+    <color name="surface_deep">#122534</color>
+    <color name="launcher_bg">#F4E2D8</color>
+    <color name="parking_icon">#E97352</color>
+</resources>

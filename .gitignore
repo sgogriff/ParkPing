@@ -1,0 +1,12 @@
+*.iml
+.gradle/
+.idea/
+local.properties
+build/
+captures/
+.DS_Store
+app/build/
+.android-sdk/
+.gradle-home/
+.tools/
+quickport.txt
